@@ -41,24 +41,6 @@ public class HotlineMainPage {
         wait = new WebDriverWait(driver ,30);
         wait.until(ExpectedConditions.visibilityOf(smartfoneTelefon));
         smartfoneTelefon.click();
-
-        //return new HotlineSearchResult(driver);
-
     }
-
-   /* public void navigateToSmartfone(){
-        final String locator = String.format(PRODUCT_PHONE);
-        final WebElement product = driver.findElement(By.xpath(locator));
-        actions.moveToElement(product).build().perform();
-    }
-
-
-  /*  private void hover (WebElement webElement) throws InterruptedException {
-        Actions actions = new Actions(driver);
-        actions.moveToElement(smartfoneTelefon).build().perform();
-        Thread.sleep(1000000);
-    }*/
-
-
 
 }

@@ -7,16 +7,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.concurrent.TimeUnit;
 
 public class HotlineSearchResult {
 
- //   @FindBy(xpath = "//*[@id='catalog-products']/div[2]/ul/li[1]/div[1]/label/i")
-   // private WebElement box;
 
     @FindBy(xpath = "//*[@id='page-catalog']/div[1]/div[1]/div[1]/aside/div/div[3]/div[1]/div[4]/div[3]/ul[1]/li[9]/label/a")
     private WebElement checkBox;
@@ -30,11 +26,11 @@ public class HotlineSearchResult {
     @FindBy(xpath = "//*[@id='catalog-products']/div[2]/ul/li[3]/div[1]/label")
     private WebElement samsungThree;
 
-   @FindBy(xpath = "//*[@id='page-catalog']/header/div[1]/div/div/div[2]/div[3]/div[1]/div")
-   private WebElement comparison;
+    @FindBy(xpath = "//*[@id='page-catalog']/header/div[1]/div/div/div[2]/div[3]/div[1]/div")
+    private WebElement comparison;
 
-   @FindBy(xpath = "(//div[@data-dropdown-id='compare']//a)[1]")
-   private WebElement finalText;
+    @FindBy(xpath = "(//div[@data-dropdown-id='compare']//a)[1]")
+    private WebElement finalText;
 
 
     private WebDriver driver;

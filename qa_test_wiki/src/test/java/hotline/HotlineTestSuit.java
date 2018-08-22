@@ -29,10 +29,6 @@ public class HotlineTestSuit {
     public void verifyHotlineNumber () throws InterruptedException {
         HotlineMainPage hotlineMainPage = new HotlineMainPage(driver);
         HotlineSearchResult hotlineSearchResult = new HotlineSearchResult(driver);
-
-
-
-
         Assert.assertEquals("3", hotlineSearchResult.getText()  );
 
      }

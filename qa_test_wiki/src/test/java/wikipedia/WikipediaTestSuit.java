@@ -15,7 +15,7 @@ public class WikipediaTestSuit {
 
     private static WebDriver driver;
     private static WikipediaMainPage searchInput;
-
+    private static WikipediaMainPage wikipediaMainPage;
 
 
 
@@ -24,7 +24,6 @@ public class WikipediaTestSuit {
     public void driverSetup() {
         System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
         driver = new ChromeDriver();
-        searchInput = new WikipediaMainPage(driver);
 
 
         driver.manage().window().maximize();
@@ -34,8 +33,10 @@ public class WikipediaTestSuit {
 
 
     @Test
-    public void verifyWikipediaText() throws InterruptedException {
-        WikipediaMainPage wikipediaMainPage = new WikipediaMainPage(driver);
+    public void verifyWikipediaText() {
+        wikipediaMainPage = new WikipediaMainPage(driver);
+        searchInput = new WikipediaMainPage(driver);
+
         wikipediaMainPage.setSearchInput("Java");
 
         WikipediaSearchResult wikipediaSearchResult = wikipediaMainPage.clickButton();

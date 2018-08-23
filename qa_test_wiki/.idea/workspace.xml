@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cc131d9-e51a-406f-a8d5-2cb278c1e62f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hotline/SearchResultTwoSmartPhones.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hotline/HotlineMainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hotline/HotlineMainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hotline/HotlineTestSuit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hotline/HotlineTestSuit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/wikipedia/WikipediaTestSuit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/wikipedia/WikipediaTestSuit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hotline/HotlineMainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hotline/HotlineMainPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hotline/SearchResultTwoSmartPhones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hotline/SearchResultTwoSmartPhones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/hotline/HotlineTestSuit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/hotline/HotlineTestSuit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/wikipedia/WikipediaTestSuit.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/wikipedia/WikipediaTestSuit.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -160,13 +158,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="910" />
-          <entry key="txt" value="38" />
+          <entry key="txt" value="79" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="910" />
-          <entry key="PLAIN_TEXT" value="38" />
+          <entry key="PLAIN_TEXT" value="79" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -224,8 +222,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/hotline/SearchResultTwoSmartPhones.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="62" selection-start-line="62" selection-end-line="62" />
+            <state relative-caret-position="272">
+              <caret line="27" column="75" selection-start-line="27" selection-start-column="75" selection-end-line="27" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -380,7 +378,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535034732565" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535035561322" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../qa_framework_webdriver" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -512,7 +510,7 @@
       <workItem from="1534870586801" duration="3932000" />
       <workItem from="1534940294664" duration="10191000" />
       <workItem from="1534954892303" duration="1736000" />
-      <workItem from="1535011508660" duration="16495000" />
+      <workItem from="1535011508660" duration="16737000" />
     </task>
     <task id="LOCAL-00001" summary="test case in class">
       <created>1534955205213</created>
@@ -535,7 +533,14 @@
       <option name="project" value="LOCAL" />
       <updated>1535013586183</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add class SearchResultTwoSmartPhones">
+      <created>1535035343383</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1535035343383</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -571,7 +576,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93954000" />
+    <option name="totallyTimeSpent" value="94196000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2050" y="76" width="1543" height="963" extended-state="0" />
@@ -677,7 +682,8 @@
     <MESSAGE value="test case in class" />
     <MESSAGE value="v2" />
     <MESSAGE value="change Xpath for smartfoneTelefon" />
-    <option name="LAST_COMMIT_MESSAGE" value="change Xpath for smartfoneTelefon" />
+    <MESSAGE value="add class SearchResultTwoSmartPhones" />
+    <option name="LAST_COMMIT_MESSAGE" value="add class SearchResultTwoSmartPhones" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
@@ -771,8 +777,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hotline/SearchResultTwoSmartPhones.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        <state relative-caret-position="272">
+          <caret line="27" column="75" selection-start-line="27" selection-start-column="75" selection-end-line="27" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

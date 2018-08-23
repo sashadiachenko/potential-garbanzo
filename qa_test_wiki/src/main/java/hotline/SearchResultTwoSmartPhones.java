@@ -25,7 +25,7 @@ public class SearchResultTwoSmartPhones {
     @FindBy(xpath = "//div[@data-dropdown-id='compare']")
     private WebElement compare;
 
-    @FindBy(xpath = "//*[@id='page-catalog']/header/div[1]/div/div/div[2]/div[3]/div[2]/div/ul/li[1]/a")
+    @FindBy(xpath = "//a[contains(text(),'Смартфоны и мобильные телефоны')]")
     private WebElement finalComparisonButton;
 
 

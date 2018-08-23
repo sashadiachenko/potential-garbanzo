@@ -11,8 +11,10 @@ import java.util.concurrent.TimeUnit;
 
 public class HotlineTestSuit {
 
-    private WebDriver driver;
-    private HotlineMainPage searchInput;
+    private static WebDriver driver;
+    private static HotlineMainPage hotlineMainPage;
+    private static HotlineSearchResult hotlineSearchResult;
+    private static SearchResultTwoSmartPhones searchResultTwoSmartPhones;
 
     @Before
     public void driverSetup(){
@@ -25,14 +27,20 @@ public class HotlineTestSuit {
 
         }
 
-     @Test
-    public void verifyHotlineNumber () throws InterruptedException {
-        HotlineMainPage hotlineMainPage = new HotlineMainPage(driver);
-        HotlineSearchResult hotlineSearchResult = new HotlineSearchResult(driver);
+  /*  @Test
+    public void verifyHotlineNumber () {
+        hotlineMainPage = new HotlineMainPage(driver);
+        hotlineSearchResult = new HotlineSearchResult(driver);
         Assert.assertEquals("3", hotlineSearchResult.getText()  );
 
-     }
+     }*/
 
+    @Test
+    public void verifyButtonClear(){
+        hotlineMainPage = new HotlineMainPage(driver);
+        searchResultTwoSmartPhones = new SearchResultTwoSmartPhones(driver);
+
+    }
 
 
     @After

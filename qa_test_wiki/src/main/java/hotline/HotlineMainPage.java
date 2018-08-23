@@ -10,9 +10,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HotlineMainPage {
-    private WebDriver driver;
-    private Actions actions;
-    private  WebDriverWait wait;
+    private static WebDriver driver;
+    private static Actions actions;
+    private static WebDriverWait wait;
 
    @FindBy(xpath = "//*[@id='page-index']//span[text()='Смартфоны и мобильные телефоны']")
     private WebElement smartfoneTelefon;

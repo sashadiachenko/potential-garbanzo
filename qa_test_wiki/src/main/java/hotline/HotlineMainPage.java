@@ -14,7 +14,7 @@ public class HotlineMainPage {
     private Actions actions;
     private  WebDriverWait wait;
 
-   @FindBy(xpath = "//*[@id='page-index']/div[1]/div[1]/div[2]/aside/nav/ul/li[18]/div/ul/li[1]/div/ul/li[1]/a/span")
+   @FindBy(xpath = "//*[@id='page-index']//span[text()='Смартфоны и мобильные телефоны']")
     private WebElement smartfoneTelefon;
 
     private static final String PRODUCT_PHONE = "//*[@id='page-index']/div[1]/div[1]/div[2]/aside/nav/ul/li[18]/a";

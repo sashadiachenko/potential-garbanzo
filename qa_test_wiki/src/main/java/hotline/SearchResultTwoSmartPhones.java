@@ -38,6 +38,12 @@ public class SearchResultTwoSmartPhones {
     @FindBy(xpath = "//a[contains(text(),'Samsung Galaxy Note9 6/128GB Ocean Blue')]")
     private WebElement secondPhone;
 
+    @FindBy(xpath = "//*[contains(text(),'Очистить список \"Cравнения\"')]")
+    private WebElement clearButton;
+
+    @FindBy(xpath = "//*[contains(text(),'Ваш список \"Сравнения\" пуст.')]")
+    private WebElement checkClearButton;
+
     private static WebDriver driver;
     private static WebDriverWait wait;
 
@@ -72,6 +78,12 @@ public class SearchResultTwoSmartPhones {
 
         switchToNewPage(driver);
 
+        clickCheckboxs(driver);
+
+
+
+
+
 
      }
 
@@ -95,5 +107,17 @@ public class SearchResultTwoSmartPhones {
         driver.close();
 
         driver.switchTo().window(winHandleBefore);
+    }
+    public void clearButton(WebDriver driver){
+        comparisonButton.click();
+        wait.until(ExpectedConditions.visibilityOf(clearButton));
+
+        JavascriptExecutor js = (JavascriptExecutor)driver;
+        js.executeScript("arguments[0].click();", clearButton);
+    }
+
+    public String getTextClearButton(){
+        String text = clearButton.getText();
+        return text;
     }
 }

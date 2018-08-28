@@ -40,9 +40,12 @@ public class HotlineTestSuit {
     public void verifyButtonClear(){
         hotlineMainPage = new HotlineMainPage(driver);
         searchResultTwoSmartPhones = new SearchResultTwoSmartPhones(driver);
+
         Assert.assertEquals("Xiaomi Redmi Note 5 4/64GB Black",searchResultTwoSmartPhones.getTextFirstPhone());
 
         Assert.assertEquals("Samsung Galaxy Note9 6/128GB Ocean Blue (SM-N960FZBD)",searchResultTwoSmartPhones.getTextSecondPhone());
+
+        Assert.assertEquals("Ваш список \"Сравнения\" пуст.", searchResultTwoSmartPhones.getTextClearButton());
 
     }
 

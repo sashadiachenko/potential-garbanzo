@@ -1,5 +1,6 @@
 package hotline;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,9 +10,12 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class SearchResultTwoSmartPhones {
+
 
     @FindBy(xpath = "(//*[@class='tile-viewbox']//*[contains(@class,'type-checkbox')])[1]")
     private WebElement checkboxOne;
@@ -28,7 +32,11 @@ public class SearchResultTwoSmartPhones {
     @FindBy(xpath = "//a[contains(text(),'Смартфоны и мобильные телефоны')]")
     private WebElement finalComparisonButton;
 
+    @FindBy(xpath = "//a[contains(text(),'Xiaomi Redmi Note 5 4/64GB Black')]")
+    private WebElement firstPhone;
 
+    @FindBy(xpath = "//a[contains(text(),'Samsung Galaxy Note9 6/128GB Ocean Blue')]")
+    private WebElement secondPhone;
 
     private static WebDriver driver;
     private static WebDriverWait wait;
@@ -56,10 +64,36 @@ public class SearchResultTwoSmartPhones {
        wait.until(ExpectedConditions.visibilityOf(comparisonButton));
        comparisonButton.click();
 
-       wait.until(ExpectedConditions.visibilityOf(finalComparisonButton));
+       wait.until(ExpectedConditions.elementToBeClickable(compare));
+       driver.manage().timeouts().implicitlyWait(40,TimeUnit.SECONDS);
 
         JavascriptExecutor js = (JavascriptExecutor)driver;
         js.executeScript("arguments[0].click();", finalComparisonButton);
 
+        switchToNewPage(driver);
+
+
+     }
+
+     public String getTextFirstPhone(){
+        String testPhone = firstPhone.getText();
+        return testPhone;
+     }
+
+    public String getTextSecondPhone(){
+        String testPhone = secondPhone.getText();
+        return testPhone;
+    }
+
+
+    public void switchToNewPage(final WebDriver driver){
+        String winHandleBefore = driver.getWindowHandle();
+
+        for(String winHandle : driver.getWindowHandles()) {
+            driver.switchTo().window(winHandle);
+        }
+        driver.close();
+
+        driver.switchTo().window(winHandleBefore);
     }
 }
